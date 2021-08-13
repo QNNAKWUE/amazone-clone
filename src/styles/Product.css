@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    border: 5px solid white;
+    padding: 50px;
+    margin: 20px;
+    margin-top: 80px;
+}
+.product__image{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    margin-top: 5px;
+    width: 40%;
+    height: 50vh;
+    margin-left: 100px;  
+}
+.product__info{
+    font-size: 15px;  
+}
+.product__price{
+    font-weight: 1000;
+    margin-top: 5px;
+}
+.product__star{
+    width: 30px;
+    margin-top: 5px;
+}
+.product__button{
+    
+}

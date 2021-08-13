@@ -9,7 +9,7 @@ function Header() {
     return (
         <div className="header">
             <img 
-                src="https://www.bizmonthly.com/wp-content/uploads/2020/04/Amazon-logo-black-template.png" 
+                src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
                 className="header__logo"
                 alt="amazon header" />
             

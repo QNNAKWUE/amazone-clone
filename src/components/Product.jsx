@@ -1,7 +1,7 @@
 import React from 'react';
 import "../styles/Product.css";
 
-function Product({title, price, image}) {
+function Product({id, title, price, image}) {
     return (
 			<div className='product'>
 				<div className='product__info'>
@@ -11,13 +11,13 @@ function Product({title, price, image}) {
 						<price>{price}</price>
 					</p>
 				</div>
-				<div className='product__rating'>
+				{/* <div className='product__rating'>
 					<img
 						src='https://cdn.pixabay.com/photo/2016/03/31/17/33/icons-1293736_960_720.png'
 						className='product__star'
 						alt='star' 
 					/>
-				</div>
+				</div> */}
 				<img
 					src={image}
 					className='product__image'

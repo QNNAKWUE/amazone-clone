@@ -35,10 +35,10 @@
 }
 .header__searchIcon{
     background-color: orange;
-    height: 5.62vh !important;
+    height: 5.64vh !important;
     position: absolute;
-    margin-left: 981px;
-    margin-top: 9px;
+    margin-left: 1090px;
+    margin-top: 9.4px;
 }
 .header__nav{
     display: flex;

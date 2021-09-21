@@ -37,7 +37,7 @@
     background-color: orange;
     height: 5.64vh !important;
     position: absolute;
-    margin-left: 1090px;
+    margin-left: 1095px;
     margin-top: 9.4px;
 }
 .header__nav{
@@ -49,7 +49,7 @@
 .header__option{
     display: flex;
     flex-direction: column;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 .header__option1{
      margin-left: 25px;
@@ -62,11 +62,17 @@
 .header__optionBasket{
     display: flex;
     flex-direction: row;
+    margin-top: 14px;
+    color: white;
 }
 .header__basket{
     margin-top: 8px;
+    color: white;
 }
-
+span{
+    color: white;
+    margin-left: 15px;
+}
 
 
 

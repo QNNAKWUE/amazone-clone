@@ -1,18 +1,23 @@
 import React from 'react';
 import "../styles/Header.css";
+import { Link } from 'react-router-dom';
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
 import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
+import { useStateValue } from './StateProvider';
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
 
 function Header() {
+    const [{basket}] = useStateValue();
     return (
         <div className="header">
-            <img 
-                src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
-                className="header__logo"
-                alt="amazon header" />
-            
+            <Link to='/Home'>
+                <img 
+                        src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" 
+                        className="header__logo"
+                        alt="amazon header" />
+            </Link>
+                 
             <div className="header__search">
                 <input 
                 className="header__searchInput"
@@ -23,15 +28,17 @@ function Header() {
             </div>
 
         <div className="header__nav">
-            <div className="header__option">
-                <span 
-                className="header__option1">
-                Hello, Sign in
-                </span>
-                <span className="header__option2">
-                Account & Lists
-                </span>
-            </div>
+            <Link to='/Login'>
+                <div className="header__option">
+                    <span 
+                    className="header__option1">
+                    Hello, Sign in
+                    </span>
+                    <span className="header__option2">
+                    Account & Lists
+                    </span>
+                </div>
+            </Link>
 
             <div className="header__option">
                 <span 
@@ -54,13 +61,15 @@ function Header() {
             </div>
 
             <div className="header__optionBasket">
+                <Link to='/Checkout'>
                     <ShoppingCartOutlinedIcon
-                    className="header__basket" 
-                    font-size="large" />
-                    <span 
-                    classname="header__optionCount">
-                    0
-                    </span>  
+                        className="header__basket" 
+                        font-size="large" />
+                        <span 
+                        classname="header__optionCount">
+                        {basket?.length}
+                        </span>  
+                </Link> 
             </div> 
         </div>
 

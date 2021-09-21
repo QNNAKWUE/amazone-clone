@@ -35,14 +35,12 @@ function Home() {
 						price='250.5'
 						image='https://cdn.shopify.com/s/files/1/0011/0162/7439/products/cell-space_326ff6bb-eb87-49e6-8ede-2061cc84638a_2048x.png?v=1626452517'
 						/>
-						<Product />
-					</div>
-
-					<div className='home__row'>
-							<Product />
-							<Product />
-							<Product />
-							<Product />
+						<Product
+						title='Samsung Wristwatch'
+						price='150.87'
+						image='https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/31/100417/1.jpg?4284'
+						
+						/>
 					</div>
 
 					<div className='home__row'>
